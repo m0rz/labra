@@ -1,0 +1,23 @@
+{
+  "name": "phaser-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "bash -c \"browserify src/index.js -o public/bundle.js -t [ babelify --presets [ es2015] ]\"",
+    "start": "http-server ./public",
+    "lint": "eslint src/ --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "eslint": "^4.19.1",
+    "http-server": "^0.11.1",
+    "phaser": "^3.7.1"
+  }
+}
